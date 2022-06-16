@@ -36,24 +36,24 @@ class MainActivity : AppCompatActivity() {
 
         btnAdd.setOnClickListener {
             var num1=etNum1.text.toString().toDouble()
-            var num2=etNum1.text.toString().toDouble()
+            var num2=etNum2.text.toString().toDouble()
             getSum(num1, num2)
         }
 
         btnSub.setOnClickListener {
             var num1=etNum1.text.toString().toInt()
-            var num2=etNum1.text.toString().toInt()
+            var num2=etNum2.text.toString().toInt()
             getSub(num1, num2)
         }
         btnProduct.setOnClickListener {
             var num1=etNum1.text.toString().toInt()
-            var num2=etNum1.text.toString().toInt()
+            var num2=etNum2.text.toString().toInt()
             getProduct(num1, num2)
         }
 
         btnMod.setOnClickListener {
             var num1=etNum1.text.toString().toInt()
-            var num2=etNum1.text.toString().toInt()
+            var num2=etNum2.text.toString().toInt()
             getMod(num1, num2)
         }
 
@@ -67,13 +67,21 @@ class MainActivity : AppCompatActivity() {
         var input1=etNum1.text.toString()
         if (input1.isBlank()){
             tilNum1.error="number required"
+            error=true
+
 
         }
         var input2=etNum1.text.toString()
         if (input2.isBlank()){
             tilNum2.error="number required"
+            error=true
 
         }
+        if (!error){
+
+
+        }
+
     }
 
     fun getSum(num1:Double,num2:Double){
@@ -90,8 +98,8 @@ class MainActivity : AppCompatActivity() {
         tvResult.text=product.toString()
     }
     fun getMod(num1:Int,num2:Int){
-        var modulus=num1%num2
-        tvResult.text=modulus.toString()
+        var mod=num1%num2
+        tvResult.text=mod.toString()
     }
 
 

@@ -5,6 +5,6 @@
     <string name="addition">+</string>
     <string name="substraction">-</string>
     <string name="results">Results</string>
-    <string name="enter_a_number">Enter a number</string>
-    <string name="enter_a_number1">enter number 2</string>
+    <string name="enter_a_number">Enter Second number</string>
+    <string name="enter_a_number1">enter first number</string>
 </resources>
